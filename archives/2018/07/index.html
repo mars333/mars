@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          [Hexo] R2R出价 - Beantech | 豆科技
+          Beantech | 豆科技
         
     </title>
 
-    <link rel="canonical" href="http://yoursite-url/2017/03/18/我的第一篇文章/">
+    <link rel="canonical" href="http://yoursite-url/archives/2018/07/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -69,8 +69,8 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('Demo.png')
-            /*post*/
+            background-image: url('/undefined')
+            /*page*/
         
     }
     
@@ -87,20 +87,10 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
-                    <div class="post-heading">
-                        <div class="tags">
-                            
-                              <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
-                            
-                              <a class="tag" href="/tags/#Blog" title="Blog">Blog</a>
-                            
-                        </div>
-                        <h1>[Hexo] R2R出价</h1>
-                        <h2 class="subheading">This is hexo theme Demo.</h2>
-                        <span class="meta">
-                            Posted by John Doe on
-                            2017-03-18
-                        </span>
+                    <div class="site-heading">
+                        <h1>Your Title</h1>
+                        <!--<hr class="small">-->
+                        <span class="subheading">This is hexo theme</span>
                     </div>
                 
 
@@ -203,202 +193,211 @@
 
 
     <!-- Main Content -->
-    <!-- Modify by Yu-Hsuan Yen -->
+    <!-- Main Content -->
+<div class="container">
+    <div class="row">
+        
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-
-            <!-- Post Container -->
+<!-- USE SIDEBAR -->
+    <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
-                <h3><span id="r2r出价">R2R出价</span></h3>
-<ol>
-<li>
-<p>出价校验<br>
-1.1 到es查出竞拍车辆信息<br>
-1.2 检测发布车辆状态（车辆状态，场次状态）<br>
-1.3 检查出价商户（保证金不足无法出价，账号是否存在，场次是否存在，未过户，未过户+保证金不足，非国四车辆，禁止流通，是否是事故车）<br>
-1.4 其他校验（价格是否是100整数倍校验，是否异常高价，不能对自己车出价）</p>
-</li>
-<li>
-<p>记录商户出价操作记录</p>
-</li>
-<li>
-<p>出价<br>
-3.1 锁住60s<br>
-3.2出价成功 商户出价价格是存在<br>
-存在-&gt;小于保留价的60%自动拒绝  否则出价   记录出价日志<br>
-3.3出价成功 商户出价不存在<br>
-报价小于等于现有最高报价直接拒绝，大于现有报价拒绝现有报价 否存出价 记录出价日志</p>
-</li>
-<li>
-<p>出价不成功</p>
-</li>
-<li>
-<p>记录异常出价</p>
-</li>
-<li>
-<p>一口价，符合心理价允许成交，消息推送出价提醒</p>
-</li>
-<li>
-<p>删除缓存</p>
-</li>
-</ol>
-<hr>
-<p><a href="https://blog.csdn.net/qq_33837446/article/details/77523339" target="_blank" rel="noopener">https://blog.csdn.net/qq_33837446/article/details/77523339</a><br>
-deploy:<br>
-type: git<br>
-repository: <a href="http://github.com/name/name.github.io.git" target="_blank" rel="noopener">http://github.com/name/name.github.io.git</a><br>
-branch: master</p>
-
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
+            
                 
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- 归档列表 -->
+            
+            
 
-                <hr>
-                <!-- Pager -->
-                <ul class="pager">
-                    
-                    
-                        <li class="next">
-                            <a href="/2017/03/18/hexo-theme-beantech/" data-toggle="tooltip" data-placement="top" title="[Hexo] Theme BeanTech">Next Post &rarr;</a>
-                        </li>
-                    
+             <!-- 归档列表 -->
+
+            
+            <div class="one-tag-list">
+                <span class="fa fa-calendar-times-o listing-seperator" id="2018">
+                    <span class="tag-text">2018</span>
+                </span>
+                <ul>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    07-30
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/2018/07/30/我的第一篇文章/" style="color: #0085a1">
+                        <span>
+                            [Hexo] R2R出价
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    03-18
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/2018/03/18/hexo-theme-beantech/" style="color: #0085a1">
+                        <span>
+                            [Hexo] Theme BeanTech
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
                 </ul>
-
-                <!-- duoshuo Share start -->
-                
-                <!-- 多说 Share end-->
-
-                <!-- 多说评论框 start -->
-                
-                <!-- 多说评论框 end -->
-
-                <!-- disqus comment start -->
-                
-                    <div class="comment">
-                        <div id="disqus_thread" class="disqus-thread"></div>
-                    </div>
-                
-                <!-- disqus comment end -->
             </div>
             
-            <!-- Tabe of Content -->
-            <!-- Table of Contents -->
 
-    
-      <aside id="sidebar">
-        <div id="toc" class="toc-article">
-        <strong class="toc-title">Contents</strong>
-        
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">R2R出价</span></a></li></ol>
-        
-        </div>
-      </aside>
-    
 
-                
-            <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
-                
-                <section>
-                    <!-- no hr -->
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                       
-                          <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
-                        
-                          <a class="tag" href="/tags/#Blog" title="Blog">Blog</a>
-                        
-                    </div>
-                </section>
-                
-
-                <!-- Friends Blog -->
-                
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-
-                    
-                        <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
-                    
-                        <li><a href="http://blog.kaijun.rocks" target="_blank">Kaijun&#39;s Blog</a></li>
-                    
-                        <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
-                    
-                        <li><a href="#" target="_blank">It Helps SEO</a></li>
-                    
-                </ul>
-                
-            </div>
         </div>
     </div>
-</article>
+</div>
 
+                <!-- 如果开启评论功能 -->
+                
+            </div>
 
+          <!-- Sidebar Container -->
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+        <!-- Featured Tags -->
 
+<section>
+    <!-- no hr -->
+    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        
+            
+            <a href="/tags/#Hexo" title="Hexo" rel="2">Hexo</a>
+            
+        
+            
+            <a href="/tags/#Blog" title="Blog" rel="2">Blog</a>
+            
+        
+    </div>
+</section>
 
-<!-- disqus embedded js code start (one page only need to embed once) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "your-disqus-ID";
-    var disqus_identifier = "http://yoursite-url/2017/03/18/我的第一篇文章/";
-    var disqus_url = "http://yoursite-url/2017/03/18/我的第一篇文章/";
+        <hr>
+    
+        <!-- Short About -->
+<section class="visible-md visible-lg">
+    <h5><a href="/about/">ABOUT ME</a></h5>
+    <div class="short-about">
 
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus embedded js code start end -->
+        
+            <img id = "avatar_pic" src="/img/ironman-draw.png" />
+        
 
+        
+            <p>Hi, i&#39;m John Doe</p>
+        
 
+        <!-- SNS Link -->
+        <ul class="list-inline">
+            
+            
+            
 
+            
 
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
-<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
-<script>
-    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
-        anchors.options = {
-          visible: 'hover',
-          placement: 'left',
-          icon: 'ℬ'
-        };
-        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
-    })
-</script>
-<style>
-    /* place left on bigger screen */
-    @media all and (min-width: 800px) {
-        .anchorjs-link{
-            position: absolute;
-            left: -0.75em;
-            font-size: 1.1em;
-            margin-top : -0.1em;
-        }
-    }
-</style>
+            
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/YenYuHsuan">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            
 
+            
+                <li>
+                    <a target="_blank"  href="https://github.com/YenYuHsuan">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            
+            
+            
+            
+                <li>
+                    <a target="_blank"  href="https://www.linkedin.com/in/yu-hsuan-yen">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+</section>
+        <hr>
+    
+        
+  <h5>RECENT POSTS</h3>
+  <div class="widget">
+    <ul>
+      
+        <li>
+          <a href="/2018/07/30/我的第一篇文章/">[Hexo] R2R出价</a>
+        </li>
+      
+        <li>
+          <a href="/2018/03/18/hexo-theme-beantech/">[Hexo] Theme BeanTech</a>
+        </li>
+      
+    </ul>
+  </div>
+
+        <hr>
+    
+        <!-- Friends Blog -->
+
+<h5>FRIENDS</h5>
+<ul class="list-inline">
+
+    
+        <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
+    
+        <li><a href="http://blog.kaijun.rocks" target="_blank">Kaijun&#39;s Blog</a></li>
+    
+        <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
+    
+        <li><a href="#" target="_blank">It Helps SEO</a></li>
+    
+</ul>
+
+        <hr>
+    
+</div>
+
+        
+    </div>
+</div>
 
 
     <!-- Footer -->
